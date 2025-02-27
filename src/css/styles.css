@@ -1,18 +1,91 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
-
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  color: #2e2f42;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 36px 929px 36px 156px;
+}
+input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  padding: 0;
+  margin-bottom: 32px;
+  box-sizing: border-box;
+  padding: 8px 16px;
+}
+input:hover {
+  border: 1px solid #000;
+}
+input:active {
+  border: 1px solid #4e75ff;
+  color: #000;
+}
+input:disabled {
+  background-color: #fafafa;
+  border: 1px solid #808080;
+  color: #808080;
+}
+button {
+  display: block;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #6c8cff;
+  color: #fff;
+}
+button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+.timer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+}
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0px;
+  width: 61px;
+  height: 72px;
+}
+.value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+}
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
