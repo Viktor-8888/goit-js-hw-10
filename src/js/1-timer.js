@@ -2,19 +2,23 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import { Ukrainian } from 'flatpickr/dist/l10n/uk.js';
 const btn = document.querySelector('button');
 const input = document.querySelector('#datetime-picker');
 const spanD = document.querySelector('[data-days]');
 const spanH = document.querySelector('[data-hours]');
 const spanM = document.querySelector('[data-minutes]');
 const spanS = document.querySelector('[data-seconds]');
+
 btn.disabled = true;
 let userSelectedDate = null;
+
 const options = {
   enableTime: true,
   time_24hr: true,
   defaultDate: new Date(),
   minuteIncrement: 1,
+  locale: Ukrainian,
   onClose(selectedDates) {
     const selected = selectedDates[0];
     console.log(selected);
@@ -23,6 +27,11 @@ const options = {
       iziToast.error({
         title: 'Error',
         message: 'Please choose a date in the future',
+        position: 'topCenter',
+        messageColor: 'white',
+        messageSize: '16px',
+        backgroundColor: '#ef4040',
+        titleColor: '#fff',
       });
       return;
     }

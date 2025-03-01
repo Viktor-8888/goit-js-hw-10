@@ -10,7 +10,47 @@ body {
   column-gap: 8px;
   width: 1440px;
   margin: 0 auto;
-  padding: 36px 929px 36px 156px;
+  padding: 36px 156px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style-type: none;
+  width: 100%;
+  height: 30vh;
+  margin: auto;
+  padding: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid gray;
+  border-radius: 20px;
+  width: 225px;
+  height: 30px;
+  padding: 0;
+}
+li:hover {
+  color: #000;
+  border: 3px solid #000;
+  font-size: 18px;
+}
+li:active {
+  color: #5c03f6;
+  border: 2px solid #5c03f6;
+}
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 input {
   border: 1px solid #808080;
@@ -88,4 +128,17 @@ button:disabled {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+}
+.flatpickr-day.today {
+  border: 1px solid #4e75ff !important;
+  border-radius: 50% !important;
+}
+
+#RXJyb3JQbGVhc2UlMjBjaG9vc2UlMjBhJTIwZGF0ZSUyMGluJTIwdGhlJTIwZnV0dXJlcmVk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 353px;
+  height: 64px;
+  margin: auto;
 }
