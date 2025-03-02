@@ -141,6 +141,10 @@ button:disabled {
   height: 64px;
   margin: auto;
 }
+.iziToast.box .iziToast-close {
+  background-image: url(../img/x-lg.png);
+  background-size: 16px;
+}
 /* #region Task-2 */
 form {
   display: flex;
@@ -160,8 +164,20 @@ input[type='number'] {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #808080;
+  border-radius: 4px;
   width: 360px;
+  height: 40px;
   margin: 0;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type='number']:hover {
+  border: 1px solid #000;
+}
+input[type='number']:focus {
+  border: 1px solid #4e75ff;
 }
 input[type='radio'] {
   display: flex;
@@ -187,6 +203,12 @@ fieldset {
   border-color: #808080;
   border-radius: 4px;
 }
+fieldset:hover {
+  border-color: #000;
+}
+fieldset:focus {
+  border-color: #000;
+}
 legend {
   margin-left: 28px;
 }
@@ -202,6 +224,7 @@ fieldset label:has(> input[type='radio']) {
   line-height: 150%;
   color: #2e2f42;
 }
+
 form button {
   display: flex;
   align-items: center;
@@ -212,5 +235,17 @@ form button {
   width: 360px;
   height: 40px;
   background-color: #4e75ff;
+}
+.iziToast.box-promise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 353px;
+  height: 64px;
+  margin: auto;
+}
+.iziToast.box-promise .iziToast-close {
+  background-image: url(../img/x-lg.png);
+  background-size: 16px;
 }
 /* #endregion */

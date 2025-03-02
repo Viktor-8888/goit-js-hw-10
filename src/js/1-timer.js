@@ -3,6 +3,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import { Ukrainian } from 'flatpickr/dist/l10n/uk.js';
+import imgErrorIcon from '../img/bi_x-octagon.png';
 const btn = document.querySelector('button');
 const input = document.querySelector('#datetime-picker');
 const spanD = document.querySelector('[data-days]');
@@ -25,6 +26,7 @@ const options = {
     if (selected.getTime() < Date.now()) {
       btn.disabled = true;
       iziToast.error({
+        iconUrl: imgErrorIcon,
         class: 'box',
         title: 'Error',
         message: 'Please choose a date in the future',
