@@ -169,6 +169,7 @@ label:first-of-type {
   width: 360px;
   height: 40px;
   margin: 0;
+  padding: 4px 16px;
   font-size: 16px;
   outline: none;
 }
