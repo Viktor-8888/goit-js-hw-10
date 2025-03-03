@@ -13,9 +13,9 @@ function createPromise(event) {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       if (state === 'fulfilled') {
-        resolve(`✅ Fulfilled promise in ${delay}ms`);
+        resolve(delay);
       } else {
-        reject(`❌ Rejected promise in ${delay}ms`);
+        reject(delay);
       }
     }, delay);
   });
