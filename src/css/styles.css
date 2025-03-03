@@ -52,7 +52,7 @@ a {
   height: 100%;
   cursor: pointer;
 }
-input:not([type='number']) {
+input {
   border: 1px solid #808080;
   border-radius: 4px;
   width: 272px;
@@ -65,14 +65,14 @@ input:not([type='number']) {
   box-sizing: border-box;
   padding: 8px 16px;
 }
-input:not([type='number']):hover {
+input:hover {
   border: 1px solid #000;
 }
-input:not([type='number']):active {
+input:active {
   border: 1px solid #4e75ff;
   color: #000;
 }
-input:not([type='number']):disabled {
+input:disabled {
   background-color: #fafafa;
   border: 1px solid #808080;
   color: #808080;
@@ -160,7 +160,7 @@ label:first-of-type {
   gap: 8px;
 }
 
-input[type='number'] {
+.form input[type='number'] {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,10 +173,10 @@ input[type='number'] {
   outline: none;
 }
 
-input[type='number']:hover {
+.form input[type='number']:hover {
   border: 1px solid #000;
 }
-input[type='number']:focus {
+.form input[type='number']:focus {
   border: 1px solid #4e75ff;
 }
 input[type='radio'] {
